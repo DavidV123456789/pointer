@@ -1,0 +1,21 @@
+//: rozdelenie pamäte : zásobník(sú tu uložené dáta premenných), hromada, pamäť periód(miesto kde je kód) 
+int k; vyhradzuje miesto v zásobniku
+
+pointer len ukazuje v hromade adresu (int*p_m;) 
+! nikdy nesmieme používať pointer, ktorý nemá danú adresu(nie je inicializovaný)
+Ako inicializovať p_m = &k;
+
+(napr- int*p_m = &k;)
+
+Pri zápise hodnoty na misto kde je:
+*p_m=10; 
+
+2/možnosť použitia
+na uchmatnutie pamäte (hromady), na vytvorenie pola na hromade. Je dynamické teda množstvo prvov nie je statické
+
+int*p_h= (int*)malloc(sizeof(int)*10);
+void* malloc (int pocet_bajtov);
+free(p_h);  !ak ju nevyčistíme potom je to závažná chyba
+
+
+//
